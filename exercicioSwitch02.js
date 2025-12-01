@@ -31,7 +31,7 @@ switch (codigoCargo) {
 
     default:
         console.log("Código de cargo inválido!");
-        process.exit(); 
+        break
 }
 
 
