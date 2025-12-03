@@ -5,15 +5,12 @@
 
 const entrada = require("readline-sync");
 
-
 const colaborador = entrada.question("Digite o nome do colaborador: ");
 const codigoCargo = entrada.questionInt("Digite o Codigo do Cargo (1 a 6): \n1 - Gerente \n2 - vendedor \n3 - Supervisor \n\nNumero do cargo: ");
 const salario = entrada.questionFloat("Digite o Salario atual: ");
 
-
 let cargo = "";
 let percentualReajuste = 0;
-
 
 switch (codigoCargo) {
     case 1:
@@ -34,10 +31,8 @@ switch (codigoCargo) {
         break
 }
 
-
 const valorReajuste = salario * percentualReajuste;
 const novoSalario = salario + valorReajuste;
-
 
 console.log(`Colaborador: ${colaborador}`);
 console.log(`Cargo: ${cargo}`);
