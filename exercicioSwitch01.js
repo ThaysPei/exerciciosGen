@@ -10,7 +10,6 @@ console.log("1 = cachorro quente,\n 2 = x-salada \n3 = x-bacon \n4 = bauru \n5 =
 const item = entrada.questionInt("Digite um codigo entre 1 e 6: ");
 const quantidadeComprada = entrada.questionInt("Digite a quantidade comprada desse item: ");
 
-
 let valorTotal;
 
 switch (item) {
